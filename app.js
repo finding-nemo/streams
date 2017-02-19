@@ -9,7 +9,7 @@ const zlib = require('zlib');
 let gzip = zlib.createGzip();
 
 //create a stream to send the compressed gzip file
-let compressed = fs.createWriteStream(__dirname + '/compressed.txt');
+let compressed = fs.createWriteStream(__dirname + '/compressed.gz');
 
 let readable = fs.createReadStream(__dirname + '/greet.txt', {'encoding': 'utf8'});
 
